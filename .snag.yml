@@ -1,0 +1,24 @@
+---
+# Snag configuartion
+#
+# Make sure you modify this file to get started.
+# If you have any questions please refer to https://github.com/Tonkpils/snag
+#
+# Verbose controls whether the process will output a command's output.
+# verbose: true
+#
+# Use the ignore section to ignore files or directors from being watched.
+# You can use 'gitignore' patterns for each item in the list.
+# ignore:
+#   - .git
+#
+# Build executes a list of commands sequentially
+# build:
+#   - echo 'Hello world'
+ignore:
+    - .git
+    - .tmp
+    - node_modules
+
+build:
+    - ./run.sh
